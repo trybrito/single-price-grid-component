@@ -4,6 +4,15 @@
 
 @layer base {
   body {
-    @apply font-primary font-normal text-base;
+    @apply flex
+    justify-center
+    items-center
+    min-h-screen
+    p-5
+    bg-neutral-light-gray
+    font-primary
+    font-normal
+    text-base
+    text-neutral-white;
   }
 }

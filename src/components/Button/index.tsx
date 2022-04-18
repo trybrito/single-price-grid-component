@@ -5,5 +5,12 @@ type ButtonProps = {
 };
 
 export default function Button({ children }: ButtonProps) {
-  return <button type="button">{children}</button>;
+  return (
+    <button
+      className="bg-primary-bright-yellow rounded-md shadow-button p-3.5 w-full text-xs"
+      type="button"
+    >
+      {children}
+    </button>
+  );
 }
