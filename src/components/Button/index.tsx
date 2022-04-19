@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import styles from "./styles.module.css";
 
 type ButtonProps = {
   children: ReactNode;
@@ -7,8 +8,9 @@ type ButtonProps = {
 export default function Button({ children }: ButtonProps) {
   return (
     <button
-      className="bg-primary-bright-yellow rounded-md shadow-button p-3.5 w-full text-xs"
+      className={styles["btn-primary"]}
       type="button"
+      data-content={children}
     >
       {children}
     </button>

@@ -16,17 +16,27 @@ module.exports = {
         "grayish-blue": "hsl(218, 22%, 67%)",
       },
     },
+    transformOrigin: {
+      "left-bottom": "left bottom",
+      "center-bottom": "center bottom",
+    },
+    rotate: {
+      "x-90": "transform: rotateX(90deg)",
+    },
+    boxShadow: {
+      card: "0 20px 40px -16px hsl(218, 22%, 67%)",
+      "light-cyan-button": "inset 0 0 1px 1px hsl(179, 62%, 44.5%)",
+      "yellow-button": "inset 0 0 1px 1px hsl(71, 73%, 54%)",
+    },
     extend: {
       fontSize: {
         "main-title": "1.34375rem",
-        subtitle: ["0.8828125rem", "1.5rem"],
+        subtitle: ["0.8125rem", "1.3125rem"],
+        price: ["1.625rem", "2.375rem"],
+        "left-column": ["0.6875rem", "1rem"],
       },
       spacing: {
-        140: "35rem",
-      },
-      boxShadow: {
-        card: "0 20px 40px -16px hsl(218, 22%, 67%)",
-        button: "inset 0 0 1px 2px hsl(179, 62%, 43%)",
+        131: "32.75rem",
       },
     },
   },

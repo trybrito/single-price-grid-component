@@ -1,16 +1,13 @@
 import Button from "../../components/Button";
+import styles from "./styles.module.css";
 
 export default function Home() {
   return (
-    <main className="shadow-card w-140">
-      <div className="bg-neutral-white p-8 rounded-t-lg">
-        <h1 className="text-primary-cyan font-bold text-main-title mb-2">
-          Join our community
-        </h1>
-        <p className="text-neutral-grayish-blue text-subtitle">
-          <strong className="text-primary-bright-yellow text-base leading-10">
-            30-day, hassle-free money back guarantee
-          </strong>
+    <main className={styles.card}>
+      <div className={styles["top-card-container"]}>
+        <h1>Join our community</h1>
+        <p>
+          <strong>30-day, hassle-free money back guarantee</strong>
           <br />
           Gain access to our full library of tutorials along with expert code
           reviews.
@@ -19,23 +16,21 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="flex">
-        <section className="w-full bg-primary-cyan p-8 rounded-bl-lg">
-          <h2 className="mb-3">Monthly Subscription</h2>
-          <p className="text-neutral-light-gray text-subtitle mb-5 opacity-80">
-            <strong className="flex items-center text-2xl">
+      <div className={styles["bottom-card-container"]}>
+        <section className={styles["left-column"]}>
+          <h2>Monthly Subscription</h2>
+          <div>
+            <strong>
               &#36;29
-              <span className="text-base text-neutral-white font-normal ml-2 opacity-50">
-                per month
-              </span>
+              <span>per month</span>
             </strong>
-            Full access for less than &#36;1 a day
-          </p>
+            <p>Full access for less than &#36;1 a day</p>
+          </div>
           <Button>Sign Up</Button>
         </section>
-        <section className="w-full bg-primary-light-cyan rounded-br-lg p-8">
-          <h2 className="mb-3">Why Us</h2>
-          <p className="text-neutral-light-gray text-xs opacity-80">
+        <section className={styles["right-column"]}>
+          <h2>Why Us</h2>
+          <p>
             Tutorials by industry experts
             <br />
             Peer &amp; expert code review
@@ -52,24 +47,6 @@ export default function Home() {
           </p>
         </section>
       </div>
-
-      {/* 
-
-      
-
-      
-
-      
-
-      
-
-      
-
-     
-
-      
-
-       */}
     </main>
   );
 }

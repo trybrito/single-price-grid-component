@@ -1,0 +1,40 @@
+@tailwind components;
+
+button.btn-primary {
+  @apply relative
+  w-full
+  p-3
+  text-xs
+  bg-primary-bright-yellow
+  shadow-light-cyan-button
+  rounded-md
+  transition-all
+  duration-[650ms]
+  hover:origin-center-bottom
+  after:content-[attr(data-content)]
+  after:absolute
+  after:box-border
+  after:top-[-100%]
+  after:left-0
+  after:w-full
+  after:p-3
+  after:mt-0.5
+  after:bg-primary-light-cyan
+  after:shadow-yellow-button
+  after:rounded-md
+  after:origin-left-bottom;
+}
+
+@layer components {
+  button.btn-primary {
+    transform-style: preserve-3d;
+  }
+
+  button.btn-primary:hover {
+    transform: rotateX(-90deg) translateY(100%);
+  }
+
+  button.btn-primary::after {
+    transform: rotateX(90deg);
+  }
+}
