@@ -3,7 +3,7 @@
 button.btn-primary {
   @apply relative
   w-full
-  p-3
+  p-[0.8125rem]
   text-xs
   bg-primary-bright-yellow
   shadow-light-cyan-button
@@ -17,12 +17,14 @@ button.btn-primary {
   after:top-[-100%]
   after:left-0
   after:w-full
-  after:p-3
+  after:p-[0.8125rem]
   after:mt-0.5
   after:bg-primary-light-cyan
   after:shadow-yellow-button
   after:rounded-md
-  after:origin-left-bottom;
+  after:origin-left-bottom
+  tablet:p-4
+  tablet:after:p-4;
 }
 
 @layer components {

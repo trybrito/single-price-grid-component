@@ -1,52 +1,74 @@
 main.card {
   @apply w-131
-  shadow-card;
+  shadow-card
+  tablet:w-full;
 }
 
 div.top-card-container {
   @apply bg-neutral-white
-  p-9
+  px-9
+  py-8
+  tablet:px-5
+  tablet:pt-6
+  tablet:pb-8
   rounded-t-lg;
 }
 
 div.top-card-container h1 {
-  @apply mb-[0.5625rem]
+  @apply mb-[1.1875rem]
   font-bold
   text-primary-cyan
-  text-main-title;
+  text-main-title
+  tablet:mb-5;
 }
 
-div.top-card-container p {
+div.top-card-container div strong {
+  @apply block
+  text-strong-subtitle
+  text-primary-bright-yellow
+  tablet:mb-3;
+}
+
+div.top-card-container div p {
   @apply text-subtitle
-  text-neutral-grayish-blue;
+  text-neutral-grayish-blue
+  tablet:inline
+  tablet:text-tablet-subtitle;
 }
 
-div.top-card-container p strong {
-  @apply text-[0.915625rem]
-  leading-9
-  text-primary-bright-yellow;
+div.top-card-container div p:first-of-type {
+  @apply mt-[0.65625rem];
 }
 
 div.bottom-card-container {
-  @apply flex;
+  @apply flex
+  tablet:flex-col;
 }
 
 div.bottom-card-container section {
   @apply w-full
-  p-9;
+  px-9
+  py-7
+  tablet:p-5;
+}
+
+div.bottom-card-container section h2 {
+  @apply text-secondary-title
+  tablet:text-secondary-tablet-title;
 }
 
 div.bottom-card-container section.left-column {
   @apply bg-primary-cyan
-  rounded-bl-lg;
+  rounded-bl-lg
+  tablet:rounded-none;
 }
 
 section.left-column div p {
   @apply mb-5
-  text-[0.771875rem]
-  leading-4
+  text-left-column
   text-neutral-light-gray
-  opacity-80;
+  opacity-80
+  tablet:text-tablet-left-column;
 }
 
 section.left-column div strong {
@@ -61,18 +83,21 @@ section.left-column div strong span {
   font-normal
   text-xs
   text-neutral-white
-  opacity-[0.55];
+  opacity-[0.55]
+  tablet:text-time-info;
 }
 
 div.bottom-card-container section.right-column {
   @apply bg-primary-light-cyan
-  rounded-br-lg;
+  rounded-br-lg
+  tablet:rounded-b-lg;
 }
 
 section.right-column p {
-  @apply text-left-column
+  @apply text-right-column
   text-neutral-light-gray
-  opacity-75;
+  opacity-80
+  tablet:text-tablet-right-column;
 }
 
 div.bottom-card-container h2 {
