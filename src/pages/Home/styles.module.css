@@ -54,7 +54,7 @@ div.bottom-card-container section {
 
 div.bottom-card-container section h2 {
   @apply text-secondary-title
-  tablet:text-secondary-tablet-title;
+  tablet:text-tablet-secondary-title;
 }
 
 div.bottom-card-container section.left-column {

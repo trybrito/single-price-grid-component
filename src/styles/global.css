@@ -15,4 +15,9 @@
     text-base
     text-neutral-white;
   }
+
+  ::selection {
+    @apply bg-neutral-light-gray
+    text-neutral-gray;
+  }
 }
