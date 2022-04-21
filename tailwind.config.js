@@ -17,6 +17,7 @@ module.exports = {
       },
       neutral: {
         white: "hsl(0, 0%, 100%)",
+        gray: "hsl(204, 3%, 34%)",
         "light-gray": "hsl(204, 43%, 93%)",
         "grayish-blue": "hsl(218, 22%, 67%)",
       },
@@ -24,9 +25,6 @@ module.exports = {
     transformOrigin: {
       "left-bottom": "left bottom",
       "center-bottom": "center bottom",
-    },
-    rotate: {
-      "x-90": "transform: rotateX(90deg)",
     },
     boxShadow: {
       card: "0 20px 40px -16px hsl(218, 22%, 67%)",
@@ -37,7 +35,7 @@ module.exports = {
       fontSize: {
         "main-title": ["1.21875rem", "1.5rem"],
         "secondary-title": ["0.90625rem", "1.5rem"],
-        "secondary-tablet-title": ["1.0625rem", "1.5rem"],
+        "tablet-secondary-title": ["1.0625rem", "1.5rem"],
         subtitle: ["0.8125rem", "1.375rem"],
         "tablet-subtitle": ["0.875rem", "1.375rem"],
         "strong-subtitle": ["0.915625rem", "1rem"],
