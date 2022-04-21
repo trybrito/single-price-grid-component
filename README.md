@@ -1,4 +1,4 @@
-# ✨ Four card feature section
+# ✨ Single Price Grid Component
 
 Solução do [desafio](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) proposto pela plataforma Frontend Mentor.
 
