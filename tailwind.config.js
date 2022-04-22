@@ -44,7 +44,6 @@ module.exports = {
         "tablet-secondary-title": ["1.125rem", "1.6875rem"],
         "tablet-subtitle": ["0.875rem", "1.625rem"],
         "tablet-strong-subtitle": ["0.9375rem", "1.25rem"],
-        "tablet-right-column": ["0.75rem", "1rem"],
       },
       spacing: {
         162: "40.5rem",
