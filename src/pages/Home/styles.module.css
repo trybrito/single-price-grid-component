@@ -1,13 +1,12 @@
 main.card {
-  @apply w-131
+  @apply w-162
   shadow-card
   tablet:w-full;
 }
 
 div.top-card-container {
   @apply bg-neutral-white
-  px-9
-  py-8
+  p-10
   tablet:px-5
   tablet:pt-6
   tablet:pb-8
@@ -15,22 +14,24 @@ div.top-card-container {
 }
 
 div.top-card-container h1 {
-  @apply mb-[1.1875rem]
+  @apply mb-[1.3125rem]
   font-bold
   text-primary-cyan
   text-main-title
-  tablet:mb-5;
+  tablet:mb-5
+  tablet:text-tablet-main-title;
 }
 
 div.top-card-container div strong {
   @apply block
   text-strong-subtitle
   text-primary-bright-yellow
-  tablet:mb-3;
+  tablet:mb-3
+  tablet:text-tablet-strong-subtitle;
 }
 
 div.top-card-container div p {
-  @apply text-subtitle
+  @apply leading-[1.625rem]
   text-neutral-grayish-blue
   tablet:inline
   tablet:text-tablet-subtitle;
@@ -47,8 +48,7 @@ div.bottom-card-container {
 
 div.bottom-card-container section {
   @apply w-full
-  px-9
-  py-7
+  p-10
   tablet:p-5;
 }
 
@@ -63,9 +63,12 @@ div.bottom-card-container section.left-column {
   tablet:rounded-none;
 }
 
+section.left-column h2 {
+  @apply mb-[0.75rem];
+}
+
 section.left-column div p {
-  @apply mb-5
-  text-left-column
+  @apply mb-[1.625rem]
   text-neutral-light-gray
   opacity-80
   tablet:text-tablet-left-column;
@@ -79,18 +82,23 @@ section.left-column div strong {
 }
 
 section.left-column div strong span {
-  @apply ml-2.5
+  @apply ml-3.5
   font-normal
-  text-xs
+  text-base
   text-neutral-white
-  opacity-[0.55]
-  tablet:text-time-info;
+  opacity-50
+  tablet:text-tablet-time-mark;
 }
 
 div.bottom-card-container section.right-column {
-  @apply bg-primary-light-cyan
+  @apply px-11
+  bg-primary-light-cyan
   rounded-br-lg
   tablet:rounded-b-lg;
+}
+
+section.right-column h2 {
+  @apply mb-[0.9375rem];
 }
 
 section.right-column p {
@@ -98,8 +106,4 @@ section.right-column p {
   text-neutral-light-gray
   opacity-80
   tablet:text-tablet-right-column;
-}
-
-div.bottom-card-container h2 {
-  @apply mb-2.5;
 }

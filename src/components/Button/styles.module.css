@@ -4,7 +4,6 @@ button.btn-primary {
   @apply relative
   w-full
   p-[0.8125rem]
-  text-xs
   bg-primary-bright-yellow
   shadow-light-cyan-button
   rounded-md
