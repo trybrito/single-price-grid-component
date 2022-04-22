@@ -22,8 +22,8 @@ button.btn-primary {
   after:shadow-yellow-button
   after:rounded-md
   after:origin-left-bottom
-  tablet:p-4
-  tablet:after:p-4;
+  tablet:p-3.5
+  tablet:after:p-3.5;
 }
 
 @layer components {
